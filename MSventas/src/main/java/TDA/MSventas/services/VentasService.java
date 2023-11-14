@@ -27,6 +27,10 @@ public class VentasService {
         return ventaRepository.findById(id);
     }
 
+    public void updateEmployee(int id, modelVentas ventas) {
+        ventaRepository.save(ventas);
+    }
+
 
     public boolean DeleteVentas(modelVentas id) {
         try{
