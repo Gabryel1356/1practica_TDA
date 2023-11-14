@@ -12,6 +12,7 @@ public class modelVentas {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     @Column(name="idventa")
     public int idVenta;
 
