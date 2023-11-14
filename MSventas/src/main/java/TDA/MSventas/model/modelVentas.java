@@ -12,30 +12,23 @@ public class modelVentas {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    
-    @Column(name="idventa")
-    public int idVenta;
+    @Column(unique = true, nullable = false)
 
-    @Column(name="importe")
-    public String importe;
-
-    @Column(name="fecha")
-    public String fecha;
-
-  @Column(name="empleado")
-    public String empleado;
-
-  @Column(name="cliente")
-    public String cliente;
+    private int idventa;
+    private String importe;
+    private String fecha;
+    private String empleado;
+    private String cliente;
+ 
 
 
 
 
 public int getIdVentas() {
-    return idVenta;
+    return idventa;
 }
 public void setIdVentas(int idVenta) {
-    this.idVenta = idVenta;
+    this.idventa = idVenta;
 }
  public String getImporte() {
      return importe;
